@@ -1,8 +1,8 @@
 ---
 layout: about
-title: PanoFuse
+title: PanoFuse: Panorama-Enhanced Vision-Language-Action Learning via Block-wise Feature Fusion
 permalink: /
-subtitle: Panorama-Enhanced Vision-Language-Action Policies for Robust Robotic Manipulation
+subtitle:
 
 profile: false
 selected_papers: false
