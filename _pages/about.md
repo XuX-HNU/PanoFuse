@@ -1,6 +1,6 @@
 ---
 layout: about
-title: PanoFuse: Panorama-Enhanced Vision-Language-Action Learning via Block-wise Feature Fusion
+title: "PanoFuse: Panorama-Enhanced Vision-Language-Action Learning via Block-wise Feature Fusion"
 permalink: /
 subtitle:
 
