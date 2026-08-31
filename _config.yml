@@ -47,3 +47,14 @@ baseurl: /PanoFuse
 
 last_updated: false
 back_to_top: true
+
+# -----------------------------------------------------------------------------
+# al-folio v1.x config contract (required by upgrade audit)
+# -----------------------------------------------------------------------------
+al_folio:
+  api_version: 1
+  style_engine: tailwind
+  compat:
+    bootstrap:
+      enabled: false
+  upgrade: {}
