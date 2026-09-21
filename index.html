@@ -3,518 +3,571 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+
+  <meta name="title" content="PanoFuse: Panorama-Enhanced Vision-Language-Action Learning with Decoupled Semantic-Geometric Routing">
+  <meta name="description" content="PanoFuse enhances vision-language-action learning with 360° panoramic perception and decoupled semantic-geometric routing for robust real-world manipulation.">
+  <meta name="keywords" content="PanoFuse, vision-language-action, VLA, panoramic perception, robotic manipulation, semantic-geometric routing, 360 camera, multimodal learning, robot learning">
+  <meta name="author" content="Peng Xu, Haoran Lin, Wanjun Jia, Kai Luo, Wenrui Chen, Zhiyong Li, Kailun Yang">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
+
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:site_name" content="Hunan University">
+  <meta property="og:title" content="PanoFuse: Panorama-Enhanced Vision-Language-Action Learning with Decoupled Semantic-Geometric Routing">
+  <meta property="og:description" content="A panorama-enhanced VLA framework that complements local wrist-camera observations with global panoramic semantic and geometric context.">
+  <meta property="og:url" content="https://xux-hnu.github.io/PanoFuse/">
+  <meta property="og:image" content="https://xux-hnu.github.io/PanoFuse/static/images/social_preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="og:image:alt" content="PanoFuse research preview">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:title" content="PanoFuse: Panorama-Enhanced Vision-Language-Action Learning">
+  <meta name="twitter:description" content="Panoramic semantic and geometric context for robust real-world VLA manipulation.">
+  <meta name="twitter:image" content="https://xux-hnu.github.io/PanoFuse/static/images/social_preview.png">
 
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
+  <meta name="citation_title" content="PanoFuse: Panorama-Enhanced Vision-Language-Action Learning with Decoupled Semantic-Geometric Routing">
+  <meta name="citation_author" content="Xu, Peng">
+  <meta name="citation_author" content="Lin, Haoran">
+  <meta name="citation_author" content="Jia, Wanjun">
+  <meta name="citation_author" content="Luo, Kai">
+  <meta name="citation_author" content="Chen, Wenrui">
+  <meta name="citation_author" content="Li, Zhiyong">
+  <meta name="citation_author" content="Yang, Kailun">
+  <meta name="citation_publication_date" content="2027">
+  <meta name="citation_conference_title" content="IEEE International Conference on Robotics and Automation (ICRA)">
+  <meta name="citation_pdf_url" content="https://xux-hnu.github.io/PanoFuse/static/pdfs/PanoFuse.pdf">
+
   <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
+  <title>PanoFuse | Panorama-Enhanced Vision-Language-Action Learning</title>
 
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
+
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
-  <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  </noscript>
-  
-  <!-- Fonts - Optimized loading -->
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
+
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "PanoFuse: Panorama-Enhanced Vision-Language-Action Learning with Decoupled Semantic-Geometric Routing",
+    "description": "PanoFuse complements local wrist-camera observations with global panoramic perception and uses decoupled semantic-geometric routing for robust robotic manipulation.",
     "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
+      {"@type": "Person", "name": "Peng Xu"},
+      {"@type": "Person", "name": "Haoran Lin"},
+      {"@type": "Person", "name": "Wanjun Jia"},
+      {"@type": "Person", "name": "Kai Luo"},
+      {"@type": "Person", "name": "Wenrui Chen"},
+      {"@type": "Person", "name": "Zhiyong Li"},
+      {"@type": "Person", "name": "Kailun Yang"}
     ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
+    "datePublished": "2027",
+    "url": "https://xux-hnu.github.io/PanoFuse/",
+    "image": "https://xux-hnu.github.io/PanoFuse/static/images/social_preview.png",
+    "keywords": ["vision-language-action", "panoramic perception", "robotic manipulation", "semantic-geometric routing", "robot learning"]
   }
   </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
-  }
-  </script>
+
+  <style>
+    .publication-title { line-height: 1.15; }
+    .hero.teaser video { width: 100%; border-radius: 14px; }
+    .paper-figure {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.10);
+      margin-bottom: 1rem;
+    }
+    .metric-card {
+      height: 100%;
+      border-radius: 14px;
+      padding: 1.3rem;
+      background: #f7f8fa;
+      border: 1px solid #e7e9ee;
+    }
+    .metric-number {
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: #2563eb;
+      line-height: 1;
+      margin-bottom: .5rem;
+    }
+    .tagline { font-weight: 600; color: #4a4a4a; }
+    .result-table th, .result-table td {
+      text-align: center !important;
+      vertical-align: middle;
+    }
+    .best-row {
+      font-weight: 700;
+      background: #eef5ff;
+    }
+    .section-subtitle {
+      max-width: 900px;
+      margin: 0 auto 2rem auto;
+    }
+    .authors-note { margin-top: .5rem; color: #777; }
+  </style>
 </head>
+
 <body>
-
-
-  <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
   <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">
+                PanoFuse: Panorama-Enhanced Vision-Language-Action Learning with Decoupled Semantic-Geometric Routing
+              </h1>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">Peng Xu<sup>1</sup>,</span>
+                <span class="author-block">Haoran Lin<sup>1</sup>,</span>
+                <span class="author-block">Wanjun Jia<sup>1</sup>,</span>
+                <span class="author-block">Kai Luo<sup>1</sup>,</span>
+                <span class="author-block">Wenrui Chen<sup>1,2</sup>,</span>
+                <span class="author-block">Zhiyong Li<sup>1,2</sup>,</span>
+                <span class="author-block">Kailun Yang<sup>1,2,†</sup></span>
+              </div>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup>1</sup>School of Artificial Intelligence and Robotics, Hunan University</span><br>
+                <span class="author-block"><sup>2</sup>National Engineering Research Center of Robot Visual Perception and Control Technology, Hunan University</span>
+                <div class="authors-note"><small><sup>†</sup>Corresponding author: Kailun Yang</small></div>
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a href="static/pdfs/PanoFuse.pdf" target="_blank"
+                       class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                      <span>Paper</span>
                     </a>
                   </span>
 
-                  <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    <a href="https://xux-hnu.github.io/PanoFuse/" target="_blank"
+                       class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><i class="fas fa-globe"></i></span>
+                      <span>Project Page</span>
+                    </a>
                   </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+
+                  <span class="link-block">
+                    <a href="https://xux-hnu.github.io/PanoFuse/" target="_blank"
+                       class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><i class="fab fa-github"></i></span>
+                      <span>Code &amp; Data</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+
+              <p class="tagline">See beyond the local view.</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <video poster="static/images/teaser_poster.jpg"
+                 id="teaser-video" autoplay controls muted loop preload="metadata">
+            <source src="static/videos/banner_video.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            PanoFuse complements local wrist-camera observations with a 360° panoramic view,
+            providing global scene context for long-horizon real-world manipulation.
+          </h2>
+        </div>
+      </div>
+    </section>
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Vision-Language-Action (VLA) policies have shown promising performance in
+                language-conditioned robotic manipulation, but conventional perspective cameras
+                provide only limited fields of view and may miss global scene context under
+                occlusion, distractors, and unseen environments. We propose <b>PanoFuse</b>, a
+                panorama-enhanced VLA framework that complements local wrist-camera observations
+                with global panoramic perception. A dedicated panoramic branch leverages a
+                pretrained panoramic foundation model to extract complementary semantic and
+                geometric representations. Rather than directly mixing these heterogeneous
+                features, <b>Decoupled Semantic-Geometric Routing (DSGR)</b> maintains them as
+                separate context streams and selectively routes them to downstream state and action
+                representations through structured block-wise attention. We further develop a
+                synchronized teleoperation pipeline and collect a real-world manipulation dataset
+                containing panoramic RGB observations, wrist-view images, language instructions,
+                robot states, and actions. Across seven evaluation settings, PanoFuse reaches an
+                average success rate of <b>52.9%</b> and shows consistent improvements under
+                novel-object, unseen-background, and distractor-rich settings.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
+    <section class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Overview</h2>
+        <div class="content has-text-centered">
+          <img class="paper-figure" src="static/images/fig1_overview.png"
+               alt="Overview of PanoFuse for real-world robotic manipulation">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            PanoFuse uses a wrist RGB camera for local manipulation detail and an Insta360 X5
+            panoramic camera for continuous 360° global context. The panoramic stream supports
+            target acquisition, grasping, transfer, and placement across a long-horizon manipulation sequence.
           </p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+    </section>
 
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Method</h2>
+        <p class="subtitle has-text-centered section-subtitle">
+          Panoramic semantic and geometric representations are extracted separately and selectively
+          routed to downstream state and action representations.
+        </p>
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+        <div class="content has-text-centered">
+          <img class="paper-figure" src="static/images/fig2_method.png"
+               alt="Pipeline of the PanoFuse framework">
+        </div>
+
+        <div class="columns">
+          <div class="column">
+            <div class="metric-card">
+              <h3 class="title is-5">Panoramic Representation</h3>
+              <p>
+                A frozen Depth Any Panoramas (DAP) model provides complementary semantic and
+                geometric features from the equirectangular panoramic RGB observation.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="metric-card">
+              <h3 class="title is-5">64 + 64 Context Tokens</h3>
+              <p>
+                Semantic and geometric features are each pooled to an 8×8 grid and projected
+                into the VLM embedding space.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="metric-card">
+              <h3 class="title is-5">DSGR</h3>
+              <p>
+                Structured block-wise attention keeps semantic and geometric streams separately
+                contextualized while exposing both to downstream state and action blocks.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Teleoperation System &amp; Dataset</h2>
+        <div class="content has-text-centered">
+          <img class="paper-figure" src="static/images/fig3_dataset.png"
+               alt="PanoFuse teleoperation data collection pipeline and dataset">
+        </div>
+
+        <div class="columns">
+          <div class="column">
+            <div class="metric-card">
+              <div class="metric-number">200</div>
+              <p><b>Successful demonstrations</b><br>50 trajectories per task across four real-world tasks.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="metric-card">
+              <div class="metric-number">&gt;100K</div>
+              <p><b>Synchronized timesteps</b><br>Panoramic RGB, wrist RGB, language, robot state, and action.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="metric-card">
+              <div class="metric-number">30 Hz</div>
+              <p><b>Control &amp; recording rate</b><br>6-DoF arm joint positions plus a 1-DoF gripper.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <h3 class="title is-5">Tasks</h3>
+          <ul>
+            <li><b>Front-Take-Back-Place:</b> transfer a drink from the front workspace to a yellow box on a separate rear table.</li>
+            <li><b>Back-Take-Front-Place:</b> transfer a drink from the rear workspace to the manipulator table.</li>
+            <li><b>Pick-Place:</b> pick a cantaloupe and return it to the vegetable basket.</li>
+            <li><b>Seq-Cup-Insert:</b> sequentially collect multiple cups and place them into a storage box.</li>
+          </ul>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+    </section>
 
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Real-World Closed-Loop Evaluation</h2>
 
+        <div class="content has-text-centered">
+          <img class="paper-figure" src="static/images/fig4_rollouts.png"
+               alt="Representative real-world closed-loop rollouts across seven evaluation settings">
+        </div>
 
+        <div class="columns is-centered">
+          <div class="column is-one-third">
+            <div class="metric-card has-text-centered">
+              <div class="metric-number">52.9%</div>
+              <p><b>Average Success Rate</b><br>Across all seven evaluation settings.</p>
+            </div>
+          </div>
+          <div class="column is-one-third">
+            <div class="metric-card has-text-centered">
+              <div class="metric-number">+22.9</div>
+              <p><b>Percentage Points</b><br>Over the strongest evaluated baseline average (π0-fast at 30.0%).</p>
+            </div>
+          </div>
+          <div class="column is-one-third">
+            <div class="metric-card has-text-centered">
+              <div class="metric-number">7</div>
+              <p><b>Evaluation Settings</b><br>Four standard tasks + three generalization settings.</p>
+            </div>
+          </div>
+        </div>
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
+        <div class="table-container">
+          <table class="table is-bordered is-striped is-hoverable is-fullwidth result-table">
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th>F→B</th>
+                <th>B→F</th>
+                <th>Pick-Place</th>
+                <th>Cup-Insert</th>
+                <th>Novel Obj.</th>
+                <th>Unseen BG.</th>
+                <th>Distractor</th>
+                <th>Avg.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>π0-base</td><td>40.0%</td><td>50.0%</td><td>50.0%</td><td>60.0%</td><td>0.0%</td><td>0.0%</td><td>0.0%</td><td>28.6%</td>
+              </tr>
+              <tr>
+                <td>π0-base w/ Pano</td><td>30.0%</td><td>20.0%</td><td>20.0%</td><td>20.0%</td><td>0.0%</td><td>0.0%</td><td>0.0%</td><td>12.9%</td>
+              </tr>
+              <tr>
+                <td>π0-fast</td><td>50.0%</td><td>60.0%</td><td>50.0%</td><td>50.0%</td><td>0.0%</td><td>0.0%</td><td>0.0%</td><td>30.0%</td>
+              </tr>
+              <tr>
+                <td>π0-fast w/ Pano</td><td>20.0%</td><td>20.0%</td><td>10.0%</td><td>20.0%</td><td>0.0%</td><td>0.0%</td><td>0.0%</td><td>10.0%</td>
+              </tr>
+              <tr class="best-row">
+                <td>PanoFuse (Ours)</td><td>50.0%</td><td>70.0%</td><td>60.0%</td><td>60.0%</td><td>50.0%</td><td>40.0%</td><td>40.0%</td><td>52.9%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Generalization &amp; Field-of-View Ablation</h2>
+
+        <div class="content has-text-centered">
+          <img class="paper-figure" src="static/images/fig5_fov.png"
+               alt="Panoramic field-of-view ablation at inference time">
+        </div>
+
+        <div class="columns">
+          <div class="column">
+            <div class="metric-card">
+              <h3 class="title is-5">Novel Object</h3>
+              <p><b>50.0%</b> success with the full 360° panorama.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="metric-card">
+              <h3 class="title is-5">Unseen Background</h3>
+              <p><b>40.0%</b> success with the full 360° panorama.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="metric-card">
+              <h3 class="title is-5">Distractor</h3>
+              <p><b>40.0%</b> success with the full 360° panorama.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-container">
+          <table class="table is-bordered is-striped is-hoverable is-fullwidth result-table">
+            <thead>
+              <tr>
+                <th>Panoramic FoV</th>
+                <th>Novel Obj.</th>
+                <th>Unseen BG.</th>
+                <th>Distractor</th>
+                <th>Avg.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>70°</td><td>0.0%</td><td>10.0%</td><td>10.0%</td><td>6.7%</td></tr>
+              <tr><td>120°</td><td>0.0%</td><td>20.0%</td><td>10.0%</td><td>10.0%</td></tr>
+              <tr><td>180°</td><td>10.0%</td><td>40.0%</td><td>30.0%</td><td>26.7%</td></tr>
+              <tr class="best-row"><td>360°</td><td>50.0%</td><td>40.0%</td><td>40.0%</td><td>43.3%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Ablation Studies</h2>
+
+        <div class="columns">
+          <div class="column">
+            <h3 class="title is-5 has-text-centered">Panoramic Representation</h3>
+            <div class="table-container">
+              <table class="table is-bordered is-fullwidth result-table">
+                <thead><tr><th>Method</th><th>Avg.</th></tr></thead>
+                <tbody>
+                  <tr><td>Semantic Only</td><td>22.5%</td></tr>
+                  <tr><td>Geometric Only</td><td>20.0%</td></tr>
+                  <tr class="best-row"><td>PanoFuse</td><td>60.0%</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="column">
+            <h3 class="title is-5 has-text-centered">Attention Routing</h3>
+            <div class="table-container">
+              <table class="table is-bordered is-fullwidth result-table">
+                <thead><tr><th>Method</th><th>Avg.</th></tr></thead>
+                <tbody>
+                  <tr><td>Unrestricted Attention</td><td>0.0%</td></tr>
+                  <tr><td>Partial Block-wise</td><td>10.0%</td></tr>
+                  <tr class="best-row"><td>DSGR (Ours)</td><td>60.0%</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="content has-text-centered">
+          <p>
+            The ablations show that panoramic semantic and geometric representations are complementary,
+            and that structured information routing is critical for effective multimodal conditioning.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title is-3 has-text-centered">Video Presentation</h2>
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <div class="publication-video">
+                <!-- Replace YOUTUBE_VIDEO_ID when available -->
+                <iframe src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID"
+                        frameborder="0"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-small is-light">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title has-text-centered">Paper</h2>
+          <iframe src="static/pdfs/PanoFuse.pdf" width="100%" height="650"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <div class="bibtex-header">
+          <h2 class="title">BibTeX</h2>
+          <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+            <i class="fas fa-copy"></i>
+            <span class="copy-text">Copy</span>
+          </button>
+        </div>
+        <pre id="bibtex-code"><code>@inproceedings{xu2027panofuse,
+  title     = {PanoFuse: Panorama-Enhanced Vision-Language-Action Learning with Decoupled Semantic-Geometric Routing},
+  author    = {Xu, Peng and Lin, Haoran and Jia, Wanjun and Luo, Kai and Chen, Wenrui and Li, Zhiyong and Yang, Kailun},
+  booktitle = {IEEE International Conference on Robotics and Automation (ICRA)},
+  year      = {2027},
+  url       = {https://xux-hnu.github.io/PanoFuse/}
+}</code></pre>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
     <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content has-text-centered">
+            <p>
+              This page was built using the
+              <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">
+                Academic Project Page Template
+              </a>,
+              adopted from the
+              <a href="https://nerfies.github.io" target="_blank">Nerfies</a>
+              project page.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+  </footer>
+</body>
+</html>
