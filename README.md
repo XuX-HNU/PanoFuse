@@ -2,7 +2,7 @@
 
 <div align="center">
 
-## PanoFuse: Panorama-Enhanced Vision-Language-Action Learning with Decoupled Semantic-Geometric Routing
+## Panorama-Enhanced Vision-Language-Action Learning with Decoupled Semantic-Geometric Routing
 
 **Peng Xu, Haoran Lin, Wanjun Jia, Kai Luo, Wenrui Chen, Zhiyong Li, Kailun Yang**
 
@@ -104,19 +104,6 @@ PanoFuse is evaluated on multiple real-world manipulation settings, including:
 
 Please refer to our paper and [project page](https://xux-hnu.github.io/PanoFuse/) for detailed results and visualizations.
 
----
-
-## TODO
-
-- [ ] Release training code
-- [ ] Release inference code
-- [ ] Release pretrained checkpoints
-- [ ] Release dataset
-- [ ] Release evaluation scripts
-- [ ] Release real-robot deployment instructions
-
----
-
 ## Citation
 
 If you find this work useful, please consider citing:
@@ -125,6 +112,5 @@ If you find this work useful, please consider citing:
 @inproceedings{xu2027panofuse,
   title     = {PanoFuse: Panorama-Enhanced Vision-Language-Action Learning with Decoupled Semantic-Geometric Routing},
   author    = {Peng Xu and Haoran Lin and Wanjun Jia and Kai Luo and Wenrui Chen and Zhiyong Li and Kailun Yang},
-  booktitle = {IEEE International Conference on Robotics and Automation (ICRA)},
-  year      = {2027}
+  year      = {2026}
 }
