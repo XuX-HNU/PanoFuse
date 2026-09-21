@@ -855,10 +855,10 @@ body {
   padding-bottom: 3rem;
 }
 
-.publication-title .title-highlight {
-  color: red !important;
-  -webkit-text-fill-color: red !important;
+.publication-title .panofuse-name {
+  color: #4f6fe8 !important;
 }
+
 
 
 
