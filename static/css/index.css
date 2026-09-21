@@ -749,5 +749,112 @@ a:focus {
   }
 }
 
+/* =========================
+   PanoFuse Custom Style
+   ========================= */
+
+/* 整体页面 */
+body {
+  background: #ffffff;
+  color: #222222;
+}
+
+/* 顶部标题区域不要太高 */
+.hero-body {
+  padding: 3rem 1.5rem;
+}
+
+/* 论文大标题 */
+.publication-title {
+  font-size: 2.8rem !important;
+  font-weight: 700 !important;
+  line-height: 1.18 !important;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem !important;
+}
+
+/* 作者 */
+.publication-authors {
+  font-size: 1.15rem !important;
+  margin-bottom: 0.8rem;
+}
+
+/* 作者名字 */
+.publication-authors a {
+  color: #2563eb !important;
+  font-weight: 500;
+}
+
+/* Section 标题 */
+.title.is-3 {
+  font-size: 2rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* 如果不喜欢标题下面的渐变线，可以去掉 */
+.title.is-3::after {
+  display: none;
+}
+
+/* Abstract */
+.content.has-text-justified {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #333333;
+}
+
+/* 图片 */
+.paper-figure {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 1.5rem auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+/* 普通浅色 section */
+.hero.is-light {
+  background: #f7f7f7;
+  border: none;
+}
+
+/* 按钮 */
+.button.is-dark {
+  background: #222222 !important;
+  border-radius: 20px !important;
+  font-size: 0.95rem;
+  box-shadow: none;
+}
+
+.button.is-dark:hover {
+  background: #2563eb !important;
+  transform: none;
+}
+
+/* 表格 */
+.result-table {
+  font-size: 0.95rem;
+}
+
+.result-table th {
+  background: #f3f4f6;
+  font-weight: 600;
+}
+
+.best-row {
+  background: #eef5ff !important;
+  font-weight: 700;
+}
+
+/* 各 section 不要隔得太远 */
+.section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+
 
 
