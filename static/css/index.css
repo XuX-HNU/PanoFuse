@@ -856,8 +856,23 @@ body {
 }
 
 .publication-title .panofuse-name {
-  color: #4f6fe8 !important;
+  display: inline-block !important;
+
+  background: linear-gradient(
+    90deg,
+    #2563eb 0%,
+    #3b82f6 35%,
+    #06b6d4 70%,
+    #22d3ee 100%
+  ) !important;
+
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
 }
+
 
 
 
