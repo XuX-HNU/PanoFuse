@@ -855,9 +855,11 @@ body {
   padding-bottom: 3rem;
 }
 
-.title-highlight {
-  color: #4776e6;
+.publication-title .title-highlight {
+  color: red !important;
+  -webkit-text-fill-color: red !important;
 }
+
 
 
 
