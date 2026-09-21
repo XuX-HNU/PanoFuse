@@ -1,80 +1,130 @@
-# Academic Project Page Template
+# PanoFuse
 
-> **Update (September 2025)**: This template has been modernized with better design, SEO, and mobile support. For the original version, see the [original-version branch](https://github.com/eliahuhorwitz/Academic-project-page-template/tree/original-version).
+<div align="center">
 
-A clean, responsive template for academic project pages.
+## PanoFuse: Panorama-Enhanced Vision-Language-Action Learning with Decoupled Semantic-Geometric Routing
 
+**Peng Xu, Haoran Lin, Wanjun Jia, Kai Luo, Wenrui Chen, Zhiyong Li, Kailun Yang**
 
-Example project pages built using this template are:
-- https://horwitz.ai/probex
-- https://vision.huji.ac.il/probegen
-- https://horwitz.ai/mother
-- https://horwitz.ai/spectral_detuning
-- https://vision.huji.ac.il/ladeda
-- https://vision.huji.ac.il/dsire
-- https://horwitz.ai/podd
-- https://dreamix-video-editing.github.io
-- https://horwitz.ai/conffusion
-- https://horwitz.ai/3d_ads/
-- https://vision.huji.ac.il/ssrl_ad
-- https://vision.huji.ac.il/deepsim
+[Project Page](https://xux-hnu.github.io/PanoFuse/) ·
+[Paper](#) ·
+[Code](#) ·
+[Dataset](#)
 
+</div>
 
+---
 
-## Start using the template
-To start using the template click on `Use this Template`.
+## Overview
 
-The template uses html for controlling the content and css for controlling the style. 
-To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
+**PanoFuse** is a panorama-enhanced Vision-Language-Action (VLA) framework for robust real-world robotic manipulation.
 
-**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
+Existing VLA policies typically rely on perspective cameras with limited fields of view, which may miss task-relevant objects or global scene context under occlusions, distractors, and cross-workspace manipulation.
 
-## What's New
+PanoFuse complements local wrist-camera observations with a **360° panoramic view** and introduces a dedicated panoramic perception branch to extract complementary **semantic** and **geometric** representations.
 
-- Modern, clean design with better mobile support
-- Improved SEO with proper meta tags and structured data
-- Performance improvements (lazy loading, optimized assets)
-- More Works dropdown
-- Copy button for BibTeX citations
-- Better accessibility
+To effectively integrate these heterogeneous representations into a pretrained VLA policy, we introduce **Decoupled Semantic-Geometric Routing (DSGR)**, which keeps semantic and geometric contexts separately contextualized while selectively routing them to downstream state and action representations.
 
-## Components
+---
 
-- Teaser video
-- Image carousel
-- YouTube video embedding
-- Video carousel
-- PDF poster viewer
-- BibTeX citation
+## Highlights
 
-## Customization
+- 🌐 **360° Global Perception**  
+  Complement local wrist-camera observations with panoramic scene context.
 
-The HTML file has TODO comments showing what to replace:
+- 🧠 **Semantic-Geometric Representation**  
+  Extract complementary semantic and geometric information from panoramic observations.
 
-- Paper title, authors, institution, conference
-- Links (arXiv, GitHub, etc.)
-- Abstract and descriptions  
-- Videos, images, and PDFs
-- Related works in the dropdown
-- Meta tags for SEO and social sharing
+- 🔀 **Decoupled Semantic-Geometric Routing**  
+  Structured block-wise attention enables effective multimodal information integration.
 
-### Meta Tags
-The template includes meta tags for better search engine visibility and social media sharing. These appear in the `<head>` section and help with:
-- Google Scholar indexing
-- Social media previews (Twitter, Facebook, LinkedIn)
-- Search engine optimization
+- 🤖 **Real-World Robotic Manipulation**  
+  Evaluate PanoFuse on cross-view, sequential, and generalization-oriented manipulation tasks.
 
-Create a 1200x630px social preview image at `static/images/social_preview.png`.
+- 📦 **Panoramic Manipulation Dataset**  
+  A synchronized dataset containing panoramic RGB observations, wrist-view images, language instructions, robot states, and actions.
 
-## Tips
+---
 
-- Compress images with [TinyPNG](https://tinypng.com)
-- Use YouTube for large videos (>10MB)  
-- Replace the favicon in `static/images/`
-- Works with GitHub Pages
+## Method
 
-## Acknowledgments
-Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
+PanoFuse consists of three main components:
 
-## Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+1. **Panoramic Representation**  
+   A pretrained panoramic foundation model extracts semantic and geometric representations from panoramic RGB observations.
+
+2. **Decoupled Semantic-Geometric Routing (DSGR)**  
+   Semantic and geometric contexts are maintained as separate information streams and selectively exposed to state and action representations through structured attention.
+
+3. **Action Generation**  
+   The action expert conditions on wrist-view observations, language instructions, robot states, and routed panoramic context to generate continuous action chunks.
+
+---
+
+## Dataset
+
+We build a synchronized real-world robotic manipulation dataset containing:
+
+- Panoramic RGB observations
+- Wrist-camera RGB observations
+- Natural-language task instructions
+- Robot proprioceptive states
+- Robot actions
+
+The dataset covers both local manipulation and cross-workspace interaction, including sequential multi-object manipulation.
+
+> **Dataset release: Coming Soon 🚧**
+
+---
+
+## Code
+
+The official implementation of PanoFuse will include:
+
+- PanoFuse model architecture
+- Panoramic feature extraction
+- Decoupled Semantic-Geometric Routing
+- Training pipeline
+- Real-robot inference pipeline
+- Evaluation scripts
+
+> **Code release: Coming Soon 🚧**
+
+---
+
+## Results
+
+PanoFuse is evaluated on multiple real-world manipulation settings, including:
+
+- Cross-view manipulation
+- Sequential manipulation
+- Novel-object generalization
+- Unseen-background generalization
+- Distractor-rich environments
+
+Please refer to our paper and [project page](https://xux-hnu.github.io/PanoFuse/) for detailed results and visualizations.
+
+---
+
+## TODO
+
+- [ ] Release training code
+- [ ] Release inference code
+- [ ] Release pretrained checkpoints
+- [ ] Release dataset
+- [ ] Release evaluation scripts
+- [ ] Release real-robot deployment instructions
+
+---
+
+## Citation
+
+If you find this work useful, please consider citing:
+
+```bibtex
+@inproceedings{xu2027panofuse,
+  title     = {PanoFuse: Panorama-Enhanced Vision-Language-Action Learning with Decoupled Semantic-Geometric Routing},
+  author    = {Peng Xu and Haoran Lin and Wanjun Jia and Kai Luo and Wenrui Chen and Zhiyong Li and Kailun Yang},
+  booktitle = {IEEE International Conference on Robotics and Automation (ICRA)},
+  year      = {2027}
+}
