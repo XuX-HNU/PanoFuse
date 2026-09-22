@@ -873,6 +873,37 @@ body {
   color: transparent !important;
 }
 
+.teaser-links {
+  margin-top: 1.5rem;
+}
+
+.youtube-demo-btn {
+  background: linear-gradient(
+    90deg,
+    #ff0033 0%,
+    #ff1a1a 100%
+  ) !important;
+
+  color: #ffffff !important;
+  border: none !important;
+  font-weight: 600 !important;
+  padding-left: 1.4rem !important;
+  padding-right: 1.4rem !important;
+
+  box-shadow: 0 6px 18px rgba(255, 0, 51, 0.18);
+  transition: all 0.25s ease !important;
+}
+
+.youtube-demo-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(255, 0, 51, 0.28);
+  color: #ffffff !important;
+}
+
+.youtube-demo-btn .icon {
+  margin-right: 0.35rem;
+}
+
 
 
 
