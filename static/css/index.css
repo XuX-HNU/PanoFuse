@@ -877,32 +877,37 @@ body {
   margin-top: 1.5rem;
 }
 
-.youtube-demo-btn {
+.panofuse-video-btn {
   background: linear-gradient(
     90deg,
-    #ff0033 0%,
-    #ff1a1a 100%
+    #2563eb 0%,
+    #3b82f6 45%,
+    #06b6d4 100%
   ) !important;
 
-  color: #ffffff !important;
+  color: white !important;
   border: none !important;
-  font-weight: 600 !important;
-  padding-left: 1.4rem !important;
-  padding-right: 1.4rem !important;
 
-  box-shadow: 0 6px 18px rgba(255, 0, 51, 0.18);
+  font-weight: 600 !important;
+
+  padding: 0.85rem 1.5rem !important;
+
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.18);
+
   transition: all 0.25s ease !important;
 }
 
-.youtube-demo-btn:hover {
+.panofuse-video-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(255, 0, 51, 0.28);
-  color: #ffffff !important;
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.28);
+  color: white !important;
 }
 
-.youtube-demo-btn .icon {
+.youtube-icon {
+  color: #ff2b2b;
   margin-right: 0.35rem;
 }
+
 
 
 
